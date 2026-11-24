@@ -1,0 +1,6 @@
+# 口袋异星宠物 — 分区表（16MB Flash）
+# app 放大到 4MB，容纳 LVGL + 16px 中文字库
+# Name,   Type, SubType, Offset,   Size,   Flags
+nvs,      data, nvs,     0x9000,   0x6000,
+phy_init, data, phy,     0xf000,   0x1000,
+factory,  app,  factory, 0x10000,  4M,
