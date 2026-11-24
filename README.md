@@ -19,6 +19,21 @@ A slow, clingy, sleepy translucent jelly ghost living on ESP32-S31.
 
 ---
 
+## 版本 / Versions
+
+本仓库同时承载两条产品线的固件，**版本号不互通**，请按目录区分：
+
+| 版本 | 产品 | 目录 | 固件版本 | 平台 | 许可 |
+|---|---|---|---|---|---|
+| **v1.0.0** | 星芽小屋 · 果冻幽灵桌宠 | 仓库根目录（`firmware/`、`docs/`） | 1.0.0 | ESP-IDF 6.1.1 / LVGL 9.6 | MIT |
+| **v2.0.0** | Desk Pet · 属性养成 + 泡泡游戏 | [`v2-desk-pet/`](v2-desk-pet/) | 1.0.0（该谱系首个固件） | ESP-IDF 6.2.0 / LVGL 9.5 | Apache-2.0 |
+
+- 两版共享硬件（ESP-Mosaico / ESP32-S31 + 右侧交互模块），但**不是同一固件的升级关系**：v2 重新实现了属性系统、状态机与游戏玩法，两者的固件互不兼容，烧录前请先确认目标版本。
+- v2 的三层版本矩阵（固件 / ESP-IDF / 依赖）见 [v2-desk-pet/VERSIONS.md](v2-desk-pet/VERSIONS.md)，差异对照见 [docs/version-map.md](docs/version-map.md)。
+- 本 README 以下内容描述 **v1.0.0 星芽小屋**。
+
+---
+
 ## 目录 / Contents
 
 - [中文](#中文)

@@ -1,0 +1,4 @@
+# bootloader 区固定 24 KiB（0x2000–0x8000），当前 IDF 快照默认配置略超 288 字节。
+# 关掉 bootloader 日志与看门狗即可放回约束内，且不影响应用功能与固件契约。
+CONFIG_BOOTLOADER_LOG_LEVEL_NONE=y
+CONFIG_BOOTLOADER_WDT_ENABLE=n

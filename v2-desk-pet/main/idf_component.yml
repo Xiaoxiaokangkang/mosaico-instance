@@ -1,0 +1,16 @@
+dependencies:
+  idf: ">=6.2"
+
+  esp_iris:
+    path: ../../../submodule/esp-mosaico-utils/ESP-Iris/components/esp_iris
+
+  esp-mosaico-bsp:
+    path: ../../../submodule/esp-mosaico-bsp/components/esp-mosaico-bsp
+
+  mosaico_module_interact:
+    path: ../../../submodule/esp-mosaico-bsp/components/mosaico_module_interact
+
+  # BSP 的 LVGL 依赖是按 $CONFIG{BSP_DISPLAY_*} 条件声明，首次配置时 sdkconfig
+  # 还没生成，组件管理器不会去拉取，导致 'lvgl' 无法解析。这里显式声明。
+  lvgl/lvgl: "==9.5.0"
+  espressif/esp_lvgl_adapter: "0.6.2"
